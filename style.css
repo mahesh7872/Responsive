@@ -1,0 +1,149 @@
+@font-face {
+  font-family: hallo;
+  src: url("./halloween.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+html .container,
+body .container {
+  background: linear-gradient(to top, black, orange);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+html .container h2,
+body .container h2 {
+  font-family: hallo;
+  font-size: 3em;
+  font-weight: 800;
+  color: maroon;
+}
+html .container p,
+body .container p {
+  font-size: 19px;
+  font-weight: 400;
+  color: black;
+}
+html .container .card,
+body .container .card {
+  margin: 10px 20px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.7fr 0.3fr;
+  grid-template-areas: "box1 box2 box3" "box4 box4 box5";
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+html .container .card .box1,
+body .container .card .box1 {
+  border-radius: 20px;
+  grid-area: box1;
+  background-image: url("./annie-spratt-HSCk4Q55bvQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all ease 1s;
+}
+html .container .card .box1:hover,
+body .container .card .box1:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+html .container .card .box2,
+body .container .card .box2 {
+  border-radius: 2rem;
+  grid-area: box2;
+  background-image: url("david-menidrey-MYRG0ptGh50-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  padding: 12px 10px;
+  transition: all ease 1s;
+}
+html .container .card .box2 h4,
+body .container .card .box2 h4 {
+  font-size: 20px;
+  font-weight: 500;
+  bottom: 10%;
+  left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+html .container .card .box2:hover,
+body .container .card .box2:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+html .container .card .box3,
+body .container .card .box3 {
+  border-radius: 20px;
+  background-image: conic-gradient(red, yellow, green, orange, blue, black);
+  grid-area: box3;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+html .container .card .box3 h3,
+body .container .card .box3 h3 {
+  font-family: hallo;
+  margin: 20px 20px;
+  font-weight: 690;
+  font-size: 25px;
+  color: rgba(248, 110, 51, 0.685);
+}
+html .container .card .box3 .icon i,
+body .container .card .box3 .icon i {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+html .container .card .box3:hover,
+body .container .card .box3:hover {
+  color: black;
+  cursor: crosshair;
+}
+html .container .card .box4,
+body .container .card .box4 {
+  height: 250px;
+  border-radius: 20px;
+  grid-area: box4;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://images.unsplash.com/photo-1604096336282-69f990f93cd6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhhbG93ZWVuJTIwcGFydHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500");
+  transition: all ease 1s;
+}
+html .container .card .box4:hover,
+body .container .card .box4:hover {
+  cursor: pointer;
+  transform: rotateX(180deg);
+}
+html .container .card .box5,
+body .container .card .box5 {
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./saso-tusar-yP19KADwhEI-unsplash.jpg");
+  grid-area: box5;
+  transition: all ease 1s;
+}
+html .container .card .box5:hover,
+body .container .card .box5:hover {
+  cursor: pointer;
+  transform: rotateZ(180deg);
+}/*# sourceMappingURL=style.css.map */
