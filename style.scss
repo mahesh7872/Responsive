@@ -12,12 +12,13 @@
 
 html,
 body {
+    font-size: clamp(14px, 8vw, 30px);
     height: 100%;
     width: 100%;
 
     .container {
         background: linear-gradient(to top, black, orange);
-        height: 100%;
+        height: auto;
         width: 100%;
         text-align: center;
         // overflow: hidden;
@@ -179,3 +180,4 @@ body {
 
 
 }
+
